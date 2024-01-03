@@ -1,0 +1,457 @@
+:root {
+    --white: #FFFFFF;
+    --dark: #1F4D5F;
+    --grey: #47778B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--dark);
+}
+
+.main-color {
+    background: #177074;
+}
+
+.white-color {
+    color: #FFFFFF;
+}
+
+.black-color {
+    color: #153946;
+}
+
+.orange-color {
+    color: #E47622;
+}
+
+.dark-color {
+    color: #1F4D5F;
+}
+
+.secondary-text-color {
+    color: var(--dark);
+}
+
+.grey-color {
+    color: #47778B;
+}
+
+.transition {
+    transition: 0.3s all ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+h2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 70px;
+}
+
+@media (max-width: 767px) {
+    .main-btn {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* landing page */
+
+.landing-page {
+    background-image: url(../images/destinations-landing.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    padding: 10% 0;
+}
+
+.shadow {
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav.white-background {
+    background-color: #FFFFFF !important;
+    transition: .5s all ease-in-out;
+}
+
+nav a {
+    color: var(--dark) !important;
+    font-size: 14px;
+}
+
+
+nav .active-nav {
+    position: relative;
+    font-weight: 600 !important ;
+    border-bottom: 2px solid var(--dark);
+}
+
+nav .sign-up-border {
+    border: 1px solid #CDCDCD;
+    padding: 4px 28px !important;
+    height: 33px;
+}
+
+nav .navbar-brand img {
+    width: 120px;
+}
+
+nav .nav-item {
+    margin-left: 20px;
+    transition: .1s;
+}
+
+nav .nav-link:hover {
+    color: #729eb1 !important;
+    font-weight: 500;
+    border-bottom: 2px solid #729eb1;
+}
+
+nav .login-container {
+    width: 50px;
+}
+
+nav .login:hover {
+    font-weight: 700;
+    color: #729eb1 !important;
+}
+
+nav .sign-up:hover {
+    background-color: #e47622b8;
+    font-weight: 500;
+    color: var(--white) !important;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.566);;
+        backdrop-filter: blur(10px);
+    }
+
+    nav .nav-item {
+        margin: 5px 0;
+        height: 50px;
+    }
+
+    nav .nav-item .nav-link {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    nav .active-nav {
+        margin: -9px 0 4px;
+    }
+}
+
+
+/* main-title  */
+
+.landing-page .main-head .top-title {
+    margin-bottom: 10px;
+}
+
+.landing-page .main-head p {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0 30% 2% ;
+}
+
+.landing-page .input-box, .input-mobile-container {
+    border-radius: 50px;
+    background-color: var(--white);
+}
+
+.landing-page .input-box {
+    height: 60px;
+    border-radius: 50px;
+    background-color: var(--white);
+    padding: 10px 14px 10px 25px;
+    box-shadow: -1px 2px 15px 1px #00000017;
+}
+
+.landing-page .input-mobile-container {
+    padding: 10px 10px 10px 20px;
+}
+
+.landing-page .input-box input, .landing-page .input-mobile-container input {
+    border: none;
+    padding: 0 10px;
+}
+
+.landing-page input:focus {
+    outline: none;
+}
+
+.landing-page input::placeholder {
+    color: var(--grey);
+}
+
+.landing-page .input-box button, .landing-page .input-mobile-container button {
+    background-color: var(--grey);
+    color: var(--white);
+    border: none;
+}
+
+.landing-page .input-box button {
+    padding: 7px 40px;
+    border-radius: 26px;
+}
+
+.landing-page .input-box button:hover, .landing-page .input-mobile-container button:hover {
+    background-color: #32525ff5;
+}
+
+.landing-page .input-box button span {
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.landing-page .input-mobile-container button {
+    border-radius: 50px;
+    padding: 6px 25px;
+}
+
+@media (max-width: 767px) {
+    .landing-page .main-head .top-title {
+        font-size: 14px;
+    }
+
+    .landing-page .main-head p {
+        font-size: 14px;
+        padding: 0 20% 1%;
+    }
+}
+
+/* main-title */
+.main-title h2 {
+    font-size: 36px;
+}
+
+@media (max-width: 767px) {
+    .main-title div {
+        font-size: 14px;
+    }
+
+    .main-title h2 {
+        font-size: 24px;
+    }
+}
+
+
+/* destiantion-cards */
+.hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.destinations-cards .destination-card {
+    position: relative;
+}
+
+.destinations-cards .destination-card .image-holder {
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.destinations-cards .destination-card:hover h5 {
+    color: #47778bc4;
+}
+
+.destinations-cards .destination-card .image-holder img {
+    width: 100%;
+}
+
+.destinations-cards .destination-card .description {
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.destinations-cards .destination-card .description h5 {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.destinations-cards .destination-card .description .price {
+    font-weight: 600;
+}
+
+.destinations-cards hr {
+    color: #84a0a1;
+    margin-top: 70px;
+}
+
+.destinations-cards .destination-card .img-container {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.destinations-cards .destination-card .image-holder::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.13);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.destinations-cards .destination-card:hover .image-holder::before {
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .destinations-cards .destination-card .description h5 {
+        font-size: 16px;
+    }
+}
+
+/* end-destination-cards */
+
+.last-section-margin {
+    margin-bottom: 100px;
+}
+
+.description .rating div {
+    margin-top: -130px;
+    z-index: 2;
+    background-color: var(--white);
+    border-radius: 18px;
+    padding: 5px 10px;
+}
+
+
+/* footer */
+footer {
+    font-size: 14px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+footer .social a {
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 5px;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+footer .social i {
+    color: #177074;
+}
+
+footer .head {
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+footer p {
+    line-height: 25px;
+}
+
+footer .links li {
+    margin: 5px 15px 5px 0;
+}
+
+footer .links a {
+    color: var(--white);
+}
+
+footer form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    color: var(--white);
+}
+
+footer form input::placeholder {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+footer form input:focus {
+    outline: none;
+}
+
+footer form button {
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+footer form button:hover {
+    opacity: 1;
+}
+
+footer form button:hover span i::before {
+    transition: 0.3s;
+}
+
+footer form button:hover span i::before {
+    margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+    footer .head {
+        margin: 15px 0 10px 0;
+    }
+
+    footer .col-lg-3 {
+        margin-bottom: 15px;
+    }
+
+    footer .social {
+        margin-left: -6px;
+    }
+}

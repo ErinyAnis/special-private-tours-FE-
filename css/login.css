@@ -1,0 +1,524 @@
+:root {
+    --white: #FFFFFF;
+    --dark: #1F4D5F;
+    --grey: #47778B;
+    --orange: #E47622;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-color {
+    background: #177074;
+}
+
+.white-color {
+    color: #FFFFFF;
+}
+
+.white-background {
+    background-color: var(--white);
+}
+
+.black-color {
+    color: #153946;
+}
+
+.orange-color {
+    color: #E47622;
+}
+
+.dark-color {
+    color: #1F4D5F;
+}
+
+.secondary-text-color {
+    color: var(--dark);
+}
+
+.grey-color {
+    color: #47778B;
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.transition {
+    transition: 0.3s all ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+h2 {
+    letter-spacing: -2px;
+    font-size: 70px;
+}
+
+.main-title {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 700;
+}
+
+.main-btn {
+    background-color: #156063;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #0c3a3b;
+}
+
+@media (max-width: 767px) {
+    .main-btn {
+        font-size: 14px;
+    }
+
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .landing-page {
+        padding: 12% 0 !important;
+    }
+}
+
+/* landing page */
+
+.landing-page {
+    background-image: url(../images/login.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    padding: 10% 0;
+}
+
+.shadow {
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav.white-background {
+    background-color: #FFFFFF !important;
+    transition: .5s all ease-in-out;
+}
+
+nav a {
+    color: var(--dark) !important;
+    font-size: 14px;
+}
+
+
+nav .active-nav {
+    position: relative;
+    font-weight: 600 !important ;
+    border-bottom: 2px solid var(--dark);
+}
+
+nav .sign-up-border {
+    border: 1px solid #CDCDCD;
+    padding: 4px 28px !important;
+    height: 33px;
+}
+
+nav .navbar-brand img {
+    width: 120px;
+}
+
+nav .nav-item {
+    margin-left: 20px;
+    transition: .1s;
+}
+
+nav .nav-link:hover {
+    color: #729eb1 !important;
+    font-weight: 500;
+    border-bottom: 2px solid #729eb1;
+}
+
+nav .login-container {
+    width: 50px;
+}
+
+nav .login:hover {
+    font-weight: 700;
+    color: #729eb1 !important;
+}
+
+nav .sign-up:hover {
+    background-color: #e47622b8;
+    font-weight: 500;
+    color: var(--white) !important;
+}
+
+nav .active-sign-up {
+    background-color: #e47622b8;
+    font-weight: 500;
+    color: var(--white) !important;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.566);;
+        backdrop-filter: blur(10px);
+    }
+
+    nav .nav-item {
+        margin: 5px 0;
+        height: 50px;
+    }
+
+    nav .nav-item .nav-link {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    nav .active-nav {
+        margin: -9px 0 4px;
+    }
+}
+
+/* form */
+.login-form .form-holder {
+    box-shadow: 1px 3px 11px 0px #719AA81A;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login-form .form-holder .form-container {
+    padding: 50px;
+}
+
+.login-form .form-holder .img-holder {
+    max-height: 650px;
+}
+
+.login-form h3 {
+    font-weight: 600;
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.login-form form .input-container input {
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #CFE1E7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.login-form form input::placeholder {
+    color: #719AA8;
+}
+
+.login-form form input:focus {
+    border: 1px solid #90bdcc;
+    outline: none;
+}
+
+.login-form .form-check input {
+    cursor: pointer;
+    border: 1px solid var(--grey);
+    border-radius: 3px;
+}
+
+.login-form .form-check-input:checked {
+    background-color: var(--dark);
+    border-color: var(--grey);
+}
+
+.login-form .forget-password {
+    color: var(--grey);
+}
+
+.login-form .forget-password:hover {
+    font-weight: 600;
+}
+
+.login-form button {
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: var(--white);
+}
+
+.login-form button:hover {
+    background-color: var(--dark);
+}
+
+.login-form .login {
+    background-color: #CFE1E7;
+}
+
+.login-form .login:hover {
+    background-color: var(--grey);
+}
+
+.login-form .facebook-login {
+    background-color: #1877F1;
+}
+
+.login-form .facebook-login:hover {
+    background-color: #2969BB;
+}
+
+.login-form .google-login {
+    background-color: var(--white);
+    border: 1px solid #BCBCBC;
+    color: #595959;
+}
+
+.login-form .google-login:hover {
+    background-color: #BCBCBC;
+}
+
+.login-form .create-account a {
+    font-weight: 600;
+}
+
+.login-form .create-account a:hover {
+    color: var(--dark);
+}
+
+.forgot-password-container {
+    margin-top: 28%;
+}
+
+.reset-password-container {
+    margin-top: 17%;
+}
+
+.forgot-password {
+    margin-top: 20%;
+}
+
+@media (max-width: 992px) {
+    .forgot-password-container {
+        margin-top: 0;
+    }
+
+    .reset-password-container {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .login-form h3 {
+        font-size: 20px;
+    }
+
+    .login-form p {
+        font-size: 14px;
+    }
+
+    .login-form form input::placeholder, .login-form .form-check .form-check-label, .login-form .forget-password {
+        font-size: 14px !important;
+    }
+
+    .login-form .form-check .form-check-label {
+        font-size: 18px;
+    }
+
+    .login-form .create-account {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* write a review */
+.write-a-review-container {
+    max-width: 615px;
+    margin: auto;
+}
+
+.write-a-review-container hr {
+    color: #CFE1E7;
+    margin: 28px 0;
+}
+
+.write-a-review-container .review-stars i {
+    margin-right: 7px;
+    cursor: pointer;
+    color: #DADADA;
+}
+
+.write-a-review-container form textarea {
+    resize: none;
+    width: 100%;
+    margin: 8px 0;
+    border: 1px solid #CFE1E7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--grey);
+}
+
+.write-a-review-container form textarea::placeholder {
+    color: #719AA8;
+}
+
+.write-a-review-container form textarea:focus {
+    border: 1px solid #90bdcc;
+    outline: none;
+}
+
+.write-a-review-container form button {
+    width: 130px;
+    padding: 8px;
+    margin-left: auto;
+}
+
+@media (max-width: 767px) {
+    .write-a-review-container .text-aria-title {
+        font-size: 14px;
+    }
+
+    .write-a-review-container form textarea {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* footer */
+footer {
+    font-size: 14px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+footer .social a {
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 5px;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+footer .social i {
+    color: #177074;
+}
+
+footer .head {
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+footer p {
+    line-height: 25px;
+}
+
+footer .links li {
+    margin: 5px 15px 5px 0;
+}
+
+footer .links a {
+    color: var(--white);
+}
+
+footer form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    color: var(--white);
+}
+
+footer form input::placeholder {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+footer form input:focus {
+    outline: none;
+}
+
+footer form button {
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+footer form button:hover {
+    opacity: 1;
+}
+
+footer form button:hover span i::before {
+    transition: 0.3s;
+}
+
+footer form button:hover span i::before {
+    margin-left: 5px;
+}
+
+footer .copy-rights {
+    margin-top: 70px;
+}
+
+footer .copy-rights a {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--orange);
+}
+
+footer .copy-rights a:hover {
+    color: var(--white);
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    footer .head {
+        margin: 15px 0 10px 0;
+    }
+
+    footer .col-lg-3 {
+        margin-bottom: 15px;
+    }
+
+    footer .social {
+        margin-left: -6px;
+    }
+}
+
+/* end-footer */
+ 
+    

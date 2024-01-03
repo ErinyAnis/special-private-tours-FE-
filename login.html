@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/rslider/css/rSlider.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login | special private tours</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="landing-page white-color">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top white-background">
+            <div class="container">
+                <!-- logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- sidebar header -->
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+                <!-- login / sign-up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <div class="login-container">
+                        <a href="login.html" class="login transition active-nav">Login</a>
+                    </div>
+                    <a href="sign-up.html" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="login-form">
+            <div class="container">
+                <div class="row form-holder white-background">
+                    <div class="col-12 col-lg-6 form-container">
+                        <img src="images/login-logo.png" alt="logo">
+                        <h3 class="dark-color">Welcome back!</h3>
+                        <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        <form action="" method="post">
+                            <div class="input-container">
+                                <input class="d-block" type="email" name="email" placeholder="Email">
+                                <input class="d-block" type="password" name="password" placeholder="Password">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between grey-color">
+                                <div class="form-check">
+                                    <input class="form-check-input shadow-none" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                </div>
+                                <a class="forget-password grey-color transition" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <button class="login">Login</button>
+                                <div class="create-account grey-color d-flex align-items-center justify-content-center">
+                                    <div>Don’t have an account?</div>
+                                    <a href="#" class="ms-2 orange-color transition">Get Started</a>
+                                </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 d-none d-lg-block img-holder">
+                        <img src="images/login&sign-up.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    
+
+    <footer class="section-padding main-color white-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                    <div class="social d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">About Us</div>
+                    <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                        come as a tourist and leave as a friend </p>
+                        
+                    <div>Amir Saad</div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Pages</div>
+                    <ul class="links d-flex flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Stay up to date on the latest from us :</div>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copy-rights">
+                <hr>
+                <div>&#169; Copyright 2023 Designed and developed by <a href="www.innovationscope.com">Innovation Scope</a> Egypt. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="vendor/rslider/js/rSlider.min.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/rslider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    $("nav").addClass("shadow");
+                } else {
+                    $("nav").removeClass("shadow");
+                }
+            });
+
+            $(".menu-btn").click(function(){
+                $(".side-bar").addClass('active');
+                $(".menu-btn").css("visibility", "hidden");
+            });
+            
+            $(".close-btn").click(function(){
+                $(".side-bar").removeClass('active');
+                $(".menu-btn").css("visibility", "visible");
+            });
+        });
+    </script>
+</body>
+</html>

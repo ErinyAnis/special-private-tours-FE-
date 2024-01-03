@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/slick-carousel/css/slick.css">
+    <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/reviews.css">
+    <title>Reviews | special private tours</title>
+</head>
+<body class="overflow-x-hidden">
+    <div class="landing-page">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <!-- logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- sidebar header -->
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active-nav" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+                <!-- login / sign-up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <div class="login-container">
+                        <a href="#" class="login transition">Login</a>
+                    </div>
+                    <a href="#" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+        <div class="container landing-content grey-color text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="main-title-head">Checkout our Client’s</div>
+                    <h2 class="main-title orange-color">Reviews</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="d-flex align-items-center flex-column flex-md-row mt-4">
+                        <a href="write-a-review.html" class="write-a-review transition">Review your trips</a>
+                        <a href="#all-reviews"class="grey-color check-all">Check all reviews</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 review-landing-img">
+                    <img  class="d-none d-md-block" src="images/reviews-landing.png" alt="image">
+                    <img  class="d-block d-md-none m-auto mt-3" src="images/review-landing-mobile.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-padding container dark-color" id="all-reviews">
+            <div class="row justify-content-between align-items-center reviews">
+                <div class="col-lg-6 review-border">
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <div class="total-reviews me-3 pe-4">
+                            <h3>Total Reviews</h3>
+                            <h4>10.0k</h4>
+                            <p>21 people today</p>
+                        </div>
+                        <div class="average-rating ps-3">
+                            <h3>Average Rating</h3>
+                            <div class="review-stars d-flex">
+                                <h4>4.0</h4>
+                                <div class="d-flex average-rating-stars">
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star active"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Average rating of this year</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container rating-scorecard">
+                        <div class="d-flex align-items-center">
+                            <div class="data">
+                                <i class="fa-solid fa-star active"></i>
+                                <span>5</span>
+                            </div>
+                            <div class="progressBar">
+                            <div class="bar-5"></div>
+                            </div>
+                            <div class="data">
+                            <div>4k</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="data">
+                                <i class="fa-solid fa-star active"></i>
+                                <span>4</span>
+                            </div>
+                            <div class="progressBar">
+                                <div class="bar-4"></div>
+                            </div>
+                            <div class="data">
+                                <div>6k</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="data">
+                                <i class="fa-solid fa-star active"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="progressBar">
+                                <div class="bar-3"></div>
+                            </div>
+                            <div class="data">
+                                <div>1.2k</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="data">
+                                <i class="fa-solid fa-star active"></i>
+                                <span>2</span>
+                            </div>
+                            <div class="progressBar">
+                                <div class="bar-2"></div>
+                            </div>
+                            <div class="data">
+                                <div>50</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="data">
+                                <i class="fa-solid fa-star active"></i>
+                                <span>1</span>
+                            </div>
+                            <div class="progressBar">
+                                <div class="bar-1"></div>
+                            </div>
+                            <div class="data">
+                                <div class="ms-2">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-5 mb-4">
+            <!-- users-reviews -->
+            <div class="row users-reviews pt-3">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="user-img">
+                        <img class="d-block d-md-none" src="images/person-review-1-mobile.png" alt="user1">
+                        <img class="d-none d-md-block" src="images/person-review-1.png" alt="user1">
+                    </div>
+                    <div class="description">
+                        <h3>Tom Garphield</h3>
+                        <div>Total spent: <span>$2400</span></div>
+                        <div class="mt-1">Total reviews: <span>14</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 content">
+                    <div class="d-flex align-items-center mt-4 mt-lg-0">
+                        <div class="review-stars d-flex">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="date grey-color ms-3">10-4-2023</div>
+                    </div>
+                    <p class="dark-color mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+
+            <div class="row users-reviews pt-3">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="user-img">
+                        <img class="d-block d-md-none" src="images/person-review-1-mobile.png" alt="user1">
+                        <img class="d-none d-md-block" src="images/person-review-1.png" alt="user1">
+                    </div>
+                    <div class="description">
+                        <h3>Tom Garphield</h3>
+                        <div>Total spent: <span>$2400</span></div>
+                        <div class="mt-1">Total reviews: <span>14</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 content">
+                    <div class="d-flex align-items-center mt-4 mt-lg-0">
+                        <div class="review-stars d-flex">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="date grey-color ms-3">10-4-2023</div>
+                    </div>
+                    <p class="dark-color mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+
+            <div class="row users-reviews pt-3">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="user-img">
+                        <img class="d-block d-md-none" src="images/person-review-1-mobile.png" alt="user1">
+                        <img class="d-none d-md-block" src="images/person-review-1.png" alt="user1">
+                    </div>
+                    <div class="description">
+                        <h3>Tom Garphield</h3>
+                        <div>Total spent: <span>$2400</span></div>
+                        <div class="mt-1">Total reviews: <span>14</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 content">
+                    <div class="d-flex align-items-center mt-4 mt-lg-0">
+                        <div class="review-stars d-flex">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="date grey-color ms-3">10-4-2023</div>
+                    </div>
+                    <p class="dark-color mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+
+            <div class="row users-reviews pt-3">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="user-img">
+                        <img class="d-block d-md-none" src="images/person-review-1-mobile.png" alt="user1">
+                        <img class="d-none d-md-block" src="images/person-review-1.png" alt="user1">
+                    </div>
+                    <div class="description">
+                        <h3>Tom Garphield</h3>
+                        <div>Total spent: <span>$2400</span></div>
+                        <div class="mt-1">Total reviews: <span>14</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-8 content">
+                    <div class="d-flex align-items-center mt-4 mt-lg-0">
+                        <div class="review-stars d-flex">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="date grey-color ms-3">10-4-2023</div>
+                    </div>
+                    <p class="dark-color mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+
+            <div class="pagination_section text-center">
+                <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                <a href="#" title="Algorithm" class="active">1</a>
+                <a href="#" title="DataStructure">2</a>
+                <a href="#" title="Languages">..</a>
+                <a href="#" title="Interview">4</a>
+                <a href="#" title="practice">5</a>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+    </section>
+
+
+
+
+
+    <footer class="section-padding main-color white-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                    <div class="social d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">About Us</div>
+                    <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                        come as a tourist and leave as a friend </p>
+                        
+                    <div>Amir Saad</div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Pages</div>
+                    <ul class="links d-flex flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Stay up to date on the latest from us :</div>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>

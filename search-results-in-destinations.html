@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/rslider/css/rSlider.min.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <title>destinations-search-results | special private tours</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="landing-page">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top white-background">
+            <div class="container">
+                <!-- logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- sidebar header -->
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active-nav" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+                <!-- login / sign-up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <div class="login-container">
+                        <a href="#" class="login transition">Login</a>
+                    </div>
+                    <a href="#" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="container text-center main-head">
+            <div class="top-title">Checkout our</div>
+            <h2 class="orange-color main-title">Destinations</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="input-box d-none d-lg-block">
+                <div class="d-flex align-items-center justify-content-between">  
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="flex-grow-1" type="search" placeholder="Search by Tour/ Destination">
+                    <button class="transition">Search<span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <div class="input-mobile-container d-flex align-items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="flex-grow-1" type="search" placeholder="Tour/ Destination">
+                    <button class="transition ms-auto"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container">        
+            <div class="tours">
+                <div class="search-results main-title text-center text-md-start d-block d-md-flex align-items-center dark-color">
+                    <div>Search Results</div>
+                    <span class="ms-0 ms-md-2">(4 trips)</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="tours-details.html">
+                                <div class="img-container">
+                                    <div class="img-holder hover">
+                                        <img src="images/destination-details-tours-slider1.png" alt="tour 1">
+                                    </div>
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img class="hover" src="images/destination-details-tours-slider2.png" alt="tour 2">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/destination-details-tours-slider3.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="tours-details.html">
+                                <div class="img-holder">
+                                    <img class="hover" src="images/destination-details-tours-slider1.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_section text-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" title="Algorithm" class="active">1</a>
+                    <a href="#" title="DataStructure">2</a>
+                    <a href="#" title="Languages">..</a>
+                    <a href="#" title="Interview">4</a>
+                    <a href="#" title="practice">5</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <hr class="mt-5 mb-5">
+
+                <div class="search-results main-title text-center text-md-start d-flex justify-content-between dark-color mb-3">
+                    <div>Other related Destinations</div>
+                    <a class="dark-color" href="destinations.html">All Destinations<i class="fa-solid fa-chevron-right ms-2"></i></a>
+                </div>
+                <div class="destinations-cards">
+                    <div class="row">
+                        <div class="col-6 col-lg-3">
+                            <a href="destination-details.html" class="destination-card dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/destination-card-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h5 class="mt-1">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <div class="price orange-color">600$</div>
+                                        <div class="d-flex align-items-center ms-3">
+                                            <i class="fa-solid fa-star orange-color me-1"></i>
+                                            <span>4.3 (14)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="destination-details.html" class="destination-card dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/destination-card-2.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h5 class="mt-1">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <div class="price orange-color">600$</div>
+                                        <div class="d-flex align-items-center ms-3">
+                                            <i class="fa-solid fa-star orange-color me-1"></i>
+                                            <span>4.3 (14)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="destination-details.html" class="destination-card dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/destination-card-3.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h5 class="mt-1">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <div class="price orange-color">600$</div>
+                                        <div class="d-flex align-items-center ms-3">
+                                            <i class="fa-solid fa-star orange-color me-1"></i>
+                                            <span>4.3 (14)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <a href="destination-details.html" class="destination-card dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/destination-card-4.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <h5 class="mt-1">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <div class="price orange-color">600$</div>
+                                        <div class="d-flex align-items-center ms-3">
+                                            <i class="fa-solid fa-star orange-color me-1"></i>
+                                            <span>4.3 (14)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        
+    </section>
+
+    <footer class="section-padding main-color white-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                    <div class="social d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">About Us</div>
+                    <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                        come as a tourist and leave as a friend </p>
+                        
+                    <div>Amir Saad</div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Pages</div>
+                    <ul class="links d-flex flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Stay up to date on the latest from us :</div>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="vendor/rslider/js/rSlider.min.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/rslider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    $("nav").addClass("shadow");
+                } else {
+                    $("nav").removeClass("shadow");
+                }
+            });
+
+            $(".menu-btn").click(function(){
+                $(".side-bar").addClass('active');
+                $(".menu-btn").css("visibility", "hidden");
+            });
+            
+            $(".close-btn").click(function(){
+                $(".side-bar").removeClass('active');
+                $(".menu-btn").css("visibility", "visible");
+            });
+        });
+    </script>
+</body>
+</html>

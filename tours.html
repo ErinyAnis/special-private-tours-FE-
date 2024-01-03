@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/rslider/css/rSlider.min.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <title>tours | special private tours</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="landing-page">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top white-background">
+            <div class="container">
+                <!-- logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- sidebar header -->
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active-nav" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+                <!-- login / sign-up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <div class="login-container">
+                        <a href="#" class="login transition">Login</a>
+                    </div>
+                    <a href="#" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+        <div class="container text-center main-head">
+            <div class="top-title">Checkout our</div>
+            <h2 class="orange-color main-title">Tours</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="input-box d-none d-lg-block">
+                <div class="d-flex align-items-center justify-content-between">  
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="flex-grow-1" type="search" placeholder="Search by Tour/ Destination">
+                    <button class="transition">Search<span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+            </div>
+            <div class="d-block d-lg-none">
+                <div class="input-mobile-container d-flex align-items-center">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="flex-grow-1" type="search" placeholder="Tour/ Destination">
+                    <button class="transition ms-auto"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding container">
+        <div class="row">
+            <div class="menu-btn d-block d-lg-none">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="col-lg-3 side-filter side-bar">
+                <div class="close-btn d-block d-lg-none">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="menu">
+                    <div class="mb-3">
+                        <h3>Filter by</h3>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="1" value="option1">
+                            <label class="form-check-label" for="1">Popular Tours</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="2" value="option2">
+                            <label class="form-check-label" for="2">This month Limited Offers</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="3" value="option3">
+                            <label class="form-check-label" for="3">Family Friendly Tours</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="4" value="option4">
+                            <label class="form-check-label" for="4">Travel under $400</label>
+                        </div>
+                    </div>
+                    <div class="range mt-5">
+                        <h3>Prefered Price</h3>
+                        <input type="text" id="sampleSlider" />
+                    </div>
+                    <div class="location-filter mb-1">
+                        <h3 class="mt-3">Location</h3>
+                        <div class="form-check form-check">
+                        <input class="form-check-input" type="checkbox" id="Berlin" value="option1">
+                        <label class="form-check-label" for="Berlin">Berlin</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="Frankfurt" value="option2">
+                            <label class="form-check-label" for="Frankfurt">Frankfurt</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="Cologne" value="option3">
+                            <label class="form-check-label" for="Cologne">Cologne</label>
+                        </div>
+                        <div class="form-check form-check">
+                            <input class="form-check-input" type="checkbox" id="Hamburg" value="option4">
+                            <label class="form-check-label" for="Hamburg">Hamburg</label>
+                        </div>
+                    </div>
+                    <button class="transition">Search<span><i class="fa-solid fa-arrow-right"></i></span></button> 
+                </div>  
+            </div>
+            <div class="col-12 col-lg-9 tours">
+                <div class="main-title text-center text-md-start">
+                    <div>Checkout out</div>
+                    <h2>Popular Tours</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="tours-details.html">
+                                <div class="img-container">
+                                    <div class="img-holder hover">
+                                        <img src="images/tour-card-1.png" alt="tour 1">
+                                    </div>
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/tour-card-2.png" alt="tour 2">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="tour-card">
+                            <a href="#">
+                                <div class="img-holder">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                                <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                                <div class="d-flex justify-content-between sub-title">
+                                    <div class="grey-color">Füssen - Germany</div>
+                                    <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                                </div>
+                                <span class="price">$600</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination_section text-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" title="Algorithm" class="active">1</a>
+                    <a href="#" title="DataStructure">2</a>
+                    <a href="#" title="Languages">..</a>
+                    <a href="#" title="Interview">4</a>
+                    <a href="#" title="practice">5</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <hr class="mt-5 mb-5">
+
+                <div class="main-title text-center text-md-start">
+                    <div>Checkout out</div>
+                    <h2>Limited Offers</h2>
+                </div>
+                <div class="row justify-content-center justify-content-lg-start limited-offers">
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/limited-offers.png" alt="icon">
+                            </div>
+                            <div class="img-container">
+                                <div class="img-holder hover">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <div class="orange-color">$600</div>
+                                <span class="text-decoration-line-through ms-1">$780</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-2.png" alt="tour 2">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination_section text-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" title="Algorithm" class="active">1</a>
+                    <a href="#" title="DataStructure">2</a>
+                    <a href="#" title="Languages">..</a>
+                    <a href="#" title="Interview">4</a>
+                    <a href="#" title="practice">5</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <hr class="mt-5 mb-5">
+
+                <div class="main-title text-center text-md-start">
+                    <div>Checkout out</div>
+                    <h2>Under $400</h2>
+                </div>
+                <div class="row justify-content-center justify-content-lg-start">
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/limited-offers.png" alt="icon">
+                            </div>
+                            <div class="img-container">
+                                <div class="img-holder hover">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <div class="orange-color">$600</div>
+                                <span class="text-decoration-line-through ms-1">$780</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-2.png" alt="tour 2">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination_section text-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" title="Algorithm" class="active">1</a>
+                    <a href="#" title="DataStructure">2</a>
+                    <a href="#" title="Languages">..</a>
+                    <a href="#" title="Interview">4</a>
+                    <a href="#" title="practice">5</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+                <hr class="mt-5 mb-5">
+
+                <div class="main-title text-center text-md-start">
+                    <div>Checkout out</div>
+                    <h2>Family Friendly</h2>
+                </div>
+                <div class="row justify-content-center justify-content-lg-start">
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/limited-offers.png" alt="icon">
+                            </div>
+                            <div class="img-container">
+                                <div class="img-holder hover">
+                                    <img src="images/tour-card-1.png" alt="tour 1">
+                                </div>
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="price d-flex align-items-center">
+                                <div class="orange-color">$600</div>
+                                <span class="text-decoration-line-through ms-1">$780</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-2.png" alt="tour 2">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-xl-4 tour-card">
+                        <a href="#">
+                            <div class="img-holder">
+                                <img src="images/tour-card-1.png" alt="tour 1">
+                            </div>
+                            <h3 class="mt-3">Fairy-tale Castles Private Tour</h3>
+                            <div class="d-flex justify-content-between sub-title">
+                                <div class="grey-color">Füssen - Germany</div>
+                                <div class="rating dark-color"><span><i class="fa-solid fa-star"></i></span>4.3 (14)</div>
+                            </div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination_section text-center">
+                    <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" title="Algorithm" class="active">1</a>
+                    <a href="#" title="DataStructure">2</a>
+                    <a href="#" title="Languages">..</a>
+                    <a href="#" title="Interview">4</a>
+                    <a href="#" title="practice">5</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-padding main-color white-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                    <div class="social d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">About Us</div>
+                    <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                        come as a tourist and leave as a friend </p>
+                        
+                    <div>Amir Saad</div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Pages</div>
+                    <ul class="links d-flex flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Stay up to date on the latest from us :</div>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="vendor/rslider/js/rSlider.min.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/rslider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    $("nav").addClass("shadow");
+                } else {
+                    $("nav").removeClass("shadow");
+                }
+            });
+
+            $(".menu-btn").click(function(){
+                $(".side-bar").addClass('active');
+                $(".menu-btn").css("visibility", "hidden");
+            });
+            
+            $(".close-btn").click(function(){
+                $(".side-bar").removeClass('active');
+                $(".menu-btn").css("visibility", "visible");
+            });
+        });
+    </script>
+</body>
+</html>

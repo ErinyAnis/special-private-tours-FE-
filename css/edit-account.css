@@ -1,0 +1,1083 @@
+:root {
+    --white: #FFFFFF;
+    --dark: #1F4D5F;
+    --grey: #47778B;
+    --orange: #E47622;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--grey);
+}
+
+.main-color {
+    background: #177074;
+}
+
+.white-color {
+    color: #FFFFFF;
+}
+
+.black-color {
+    color: #153946;
+}
+
+.orange-color {
+    color: #E47622;
+}
+
+.dark-color {
+    color: #1F4D5F;
+}
+
+.secondary-text-color {
+    color: var(--dark);
+}
+
+.grey-color {
+    color: #47778B;
+}
+
+.white-background {
+    background-color: var(--white);
+}
+
+.transition {
+    transition: 0.3s all ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+h2 {
+    font-family: 'Fuzzy Bubbles', cursive;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 70px;
+}
+
+.main-btn {
+    border-radius: 6PX;
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+nav .active-sign-up {
+    background-color: #e47622b8;
+    font-weight: 500;
+    color: var(--white) !important;
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+
+
+
+@media (max-width: 767px) {
+    .main-btn {
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 36px;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    nav .sign-up {
+        margin: auto;
+    }
+}
+
+/* landing page */
+
+.landing-page {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.shadow {
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav.white-background {
+    background-color: #FFFFFF !important;
+    transition: .5s all ease-in-out;
+}
+
+nav a {
+    color: var(--dark) !important;
+    font-size: 14px;
+}
+
+
+nav .active-nav {
+    position: relative;
+    font-weight: 600 !important ;
+    border-bottom: 2px solid var(--dark);
+}
+
+nav .sign-up-border {
+    border: 1px solid #CDCDCD;
+    padding: 4px 28px !important;
+    height: 33px;
+}
+
+nav .navbar-brand img {
+    width: 120px;
+}
+
+nav .nav-item {
+    margin-left: 20px;
+    transition: .1s;
+}
+
+nav .nav-link:hover {
+    color: #729eb1 !important;
+    font-weight: 500;
+    border-bottom: 2px solid #729eb1;
+}
+
+nav .login-container {
+    width: 50px;
+}
+
+nav .login:hover {
+    font-weight: 700;
+    color: #729eb1 !important;
+}
+
+/* nav .sign-up:hover {
+    background-color: #e47622b8;
+    font-weight: 500;
+    color: var(--white) !important;
+} */
+
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0.566);;
+        backdrop-filter: blur(10px);
+    }
+
+    nav .nav-item {
+        margin: 5px 0;
+        height: 50px;
+    }
+
+    nav .nav-item .nav-link {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    nav .active-nav {
+        margin: -9px 0 4px;
+    }
+}
+/* end-main-styles */
+
+/* edit-account-styles */
+.edit-account .acount-details {
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.edit-account .acount-details:hover {
+    color: var(--orange);
+}
+
+.edit-account .side-bar {
+    border-right: 1px solid #E2EEF2;
+}
+
+.edit-account .side-bar a {
+    margin: 25px 0;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 50px;
+    display: block;
+    transition: 0.3s;
+    background: none;
+    color: var(--grey);
+    min-width: 173px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.edit-account .side-bar a.active, .edit-account .side-bar a:hover {
+    background: #E9F5FA;
+}
+
+.edit-account .side-bar a.active {
+    font-weight: 600;
+}
+
+/* end-side-bar */
+
+/* main-data */
+.edit-account .data-holder {
+    border: 1px solid #E2EEF2;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.edit-account .data-holder h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.edit-account .data-holder .primary {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+.edit-account .data-holder .secondary {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+ .edit-account .personal-info .e-mail {
+    color: var(--dark);
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.edit-account .edit-button {
+    color: var(--grey);
+    border: 1px solid #CFE1E7;
+    background: none;
+    padding: 7px 20px;
+    height: 38px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.edit-account .edit-button:hover, .done-edit {
+    background-color: var(--grey);
+    color: var(--white) !important;
+}
+
+.done-edit {
+    background-color: var(--grey) !important;
+    transition: 0.3s;
+}
+
+.done-edit:hover {
+    background-color: var(--dark) !important;
+}
+
+.edit-account .last-name {
+    margin-left: 189px;
+}
+
+.edit-account .phone {
+    margin-left: 78px;
+}
+
+.edit-account .tax {
+    margin-left: 180px;
+}
+
+.edit-account .city {
+    margin-left: 198px;
+}
+
+.log-out-btn {
+    border: 1px solid #CFE1E7;
+    background: none;
+    border-radius: 6px;
+    padding: 6px 18px;
+    font-size: 14px;
+}
+
+.log-out-btn:hover {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+/* enable-editing */
+.edit-account input {
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    color: var(--dark);
+    margin: 7px 0 25px 0;
+}
+
+.edit-account .last-name-input {
+    margin-left: 65px;
+}
+
+.edit-account .phone-input {
+    margin-left: 65px;
+}
+
+.edit-account input:focus {
+    outline: none;
+}
+
+.edit-account .menu a {
+    width: 50%;
+    margin: 25px auto;
+}
+
+@media (max-width: 767px) {
+    .edit-account .acount-details {
+        font-size: 16px;
+    }
+
+    .edit-account .data-holder h5 {
+        font-size: 14px;
+    }
+
+    .edit-account .phone {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .edit-account .phone-input {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1301px) {
+    .menu-btn {
+        display: none;
+    }
+
+}
+
+/* side-bar-mobile */
+@media (max-width: 1300px) {
+    .side-bar {
+        background: rgb(220 235 239);
+        backdrop-filter: blur(15px);
+        box-shadow: 0px 3px 10px 1px #888888c2;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 65px;
+        right: 108%;
+        z-index: 2;
+    }
+    
+    .side-bar.active {
+        left: 0;
+        transition: 0.6s ease;
+        transition-property: left;
+    }
+    
+    .side-bar .close-btn {
+        position: absolute;
+        color: var(--dark);
+        font-size: 20px;
+        right: 0;
+        margin: 25px;
+        cursor: pointer;
+    }
+
+    .side-bar .close-btn i::before {
+        display: block;
+    }
+    
+    .menu-btn {
+        color: var(--dark);
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .side-bar .menu {
+        width: 100%;
+        margin-top: 37%;
+        padding: 0 20px;
+    }
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+    .edit-account .side-bar button {
+        margin: 25px auto;
+    }
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* my-rips-details */
+
+
+/* my-tours-cards */
+
+.my-profile-cards .card-holder {
+    font-size: 14px;
+    border: 1px solid #E2EEF2;
+    border-radius: 6px;
+    padding: 17px;
+}
+
+.my-profile-cards .card-holder .link a, .my-profile-cards .info a {
+    padding: 7px 15px;
+    text-align: center;
+    color: var(--dark);
+    border: 1px solid #E2EEF2;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.my-profile-cards .card-holder .link a:hover, .my-profile-cards .info a:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.my-profile-cards .card-holder .title {
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.my-profile-cards .card-holder .title h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cards-padding {
+    margin: 70px 0;
+}
+
+.my-profile-cards .title span {
+    font-size: 14px;
+}
+
+.profile-container .my-profile-cards h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.my-profile-cards .info {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .my-profile-cards .card-holder .title {
+        font-size: 14px;
+    }
+
+    .my-profile-cards .card-holder .img-container {
+        border-right: 1px solid #CFE1E7;
+        height: 50%;
+        padding-right: 10px;
+    }
+
+}
+
+/* end-card */
+
+.my-profile-cards .main-title, .my-profile-cards .main-title a {
+    color: var(--dark);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.my-profile-cards .main-title {
+    margin-bottom: 5px;
+}
+
+.my-profile-cards .main-title a:hover {
+    color: var(--orange);
+}
+
+.all-trips-details .my-profile-cards {
+    padding-left:  5px;
+}
+
+.all-trips-details .card-holder {
+    border: none;
+    padding: 0;
+}
+
+.all-trips-details  .checkout .main-title span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.all-trips-details  .checkout .info-card-container .info-card {
+    color: #719AA8;
+    font-size: 14px;
+    border: 1px solid #E2EEF2;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #FBFDFD;
+    margin: 7px 5px;
+}
+
+.all-trips-details .checkout .info-card-container .discount-card {
+    border: 1px solid #E476225C;
+    background-color: #efcbb024;
+}
+
+.all-trips-details .payment {
+    width: 50%;
+}
+
+.all-trips-details p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .all-trips-details .my-profile-cards {
+        padding-left: 0;
+    }
+
+    .all-trips-details  .checkout .info-card-container .info-card {
+        width: 100%;
+    }
+
+    .all-trips-details .payment {
+        width: 100%;
+    }
+}
+
+.my-profile-cards .card-holder {
+    font-size: 14px;
+    margin: 7px;
+}
+
+.my-profile-cards .card-holder .title h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.my-profile-cards .card-holder .link a {
+    padding: 7px 15px;
+    text-align: center;
+}
+
+.my-profile-cards .card-holder .title {
+    margin-top: 5px;
+}
+
+.cards-padding {
+    margin: 70px 0;
+}
+
+.my-profile-cards .title span {
+    font-size: 14px;
+}
+
+.profile-container .my-profile-cards h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* destiantion-cards */
+.destinations-cards .destination-card {
+    position: relative;
+}
+
+.destinations-cards .destination-card .image-holder {
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.destinations-cards .destination-card:hover h5 {
+    color: #47778bc4;
+}
+
+.destinations-cards .destination-card .image-holder img {
+    width: 100%;
+}
+
+.destinations-cards .destination-card .description {
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.destinations-cards .destination-card .description h5 {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.destinations-cards .destination-card .description .price {
+    font-weight: 600;
+}
+
+.destinations-cards hr {
+    color: #84a0a1;
+    margin-top: 70px;
+}
+
+.destinations-cards .destination-card .img-container {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.destinations-cards .destination-card .image-holder::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.13);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.destinations-cards .destination-card:hover .image-holder::before {
+    opacity: 1;
+}
+
+.hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .destinations-cards .destination-card .description h5 {
+        font-size: 16px;
+    }
+}
+
+/* end-destination-cards */
+
+@media (max-width: 992px) {
+    .my-profile .other-options-container {
+        margin-top: 60px;
+    }
+
+    .my-profile-cards .card-holder {
+        width: 100%;
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .my-profile .other-options-container {
+        margin-top: 45px;
+    }
+
+    .my-profile .other-options-container .profile-holder {
+        max-width: 120px;
+        margin-top: -50px;
+    }
+    
+    .my-profile .other-options-container .data .number {
+        font-size: 16px;
+    }
+
+    .my-profile .other-options-container .data .description {
+        font-size: 14px;
+    }
+
+    .my-profile .other-options-container .name {
+        font-size: 25px;
+    }
+
+    .my-profile .other-options-container .data-container .location {
+        font-size: 14px;
+    } 
+
+    .my-profile .other-options-container .data-container .email {
+        font-size: 16px;
+    }
+
+    .my-profile .other-options-container .data-container .button-holder {
+        margin-top: 10px;
+    }
+
+    .my-profile-cards .card-holder .link {
+        min-width: 0;
+    }
+    
+}
+
+.users-reviews .user-img {
+    padding-right: 17px;
+}
+
+.users-reviews .description div {
+    font-size: 14px;
+}
+
+.users-reviews .description h5 {
+    font-size: 16px;
+}
+
+.users-reviews .description div span {
+    color: var(--dark);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.users-reviews .review-stars .active {
+    color: #e47622;
+}
+
+.users-reviews .review-stars i {
+    margin-right: 7px;
+    color: #E9E9E9;
+}
+
+.users-reviews .content p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+@media (max-width: 992px) {
+    .rating-scorecard {
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    i {
+        font-size: 14px;
+    }
+
+    .reviews {
+        padding: 0 30px;
+    }
+    
+    .reviews h3 {
+        font-size: 16px;
+    }
+
+    .reviews h4 {
+        font-size: 24px;
+    }
+
+    .reviews p {
+        font-size: 14px;
+    }
+
+    .reviews .review-border {
+        border: none;
+    }
+
+    .reviews .average-rating-stars {
+        margin-top: -3%;
+    }
+
+    .users-reviews {
+        padding: 0 25px;
+    }
+
+    .users-reviews .description h3 {
+        font-size: 14px;
+    }
+
+    .users-reviews .description div {
+        font-size: 11px;
+    }
+
+    .users-reviews .content p {
+        font-size: 14px;
+    }
+
+    .users-reviews .content .date {
+        font-size: 11px;
+    }
+
+}
+
+.all-trips-details .link a {
+    padding: 7px 15px;
+    text-align: center;
+    color: var(--dark);
+    border: 1px solid #E2EEF2;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.all-trips-details .link a:hover {
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+/* change-password */
+.change-password input {
+    border: 1px solid #719aa85c;
+    padding: 15px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.change-password input:focus {
+    border: 1px solid #719aa8;
+}
+
+.change-password input::placeholder {
+    color: #719AA8;
+}
+
+.change-password .forgot-password {
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.change-password .forgot-password:hover {
+    color: var(--dark);
+}
+
+.change-password .update-password {
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--grey);
+    transition: 0.3s;
+    padding: 10px 20px;
+    border: none;
+}
+
+/* my-billings */
+
+
+.change-password .update-password:hover {
+    background-color: var(--dark);
+}
+
+@media (max-width: 767px) {
+    .change-password input {
+        width: 100%;
+    }
+
+    .change-password .update-password {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+.bill-container {
+    font-size: 14px;
+    border: 1px solid #E2EEF2;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.bill-container .content span {
+    font-weight: 600;
+}
+
+.bill-container .content a {
+    color: var(--dark);
+    border: 1px solid #E2EEF2; 
+    margin-right: 7px;
+}
+
+
+.bill-container .content a:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.bill-container .content button {
+    color: var(--white);
+    background-color: var(--grey);
+    border: none;
+}
+
+.bill-container .content button:hover {
+    background-color: var(--dark);
+}
+
+.bill-container .content a, .bill-container .content button {
+    padding: 8px 17px;
+    transition: 0.3s;
+    border-radius: 6px;
+    max-height: 40px;
+}
+
+.bill-container .content .price {
+    font-weight: 600;
+}
+
+.dashboard .number {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.dashboard span {
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+.dashboard .savings {
+    border: 1px solid #F9DDC8;
+}
+
+@media (max-width: 767px) {
+    .dashboard span {
+        margin-top: 36px;
+        text-align: end;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    font-size: 14px;
+}
+
+footer a {
+    transition: 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+footer .social a {
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 5px;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+footer .social i {
+    color: #177074;
+}
+
+footer .head {
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+footer p {
+    line-height: 25px;
+}
+
+footer .links li {
+    margin: 5px 15px 5px 0;
+}
+
+footer .links a {
+    color: var(--white);
+}
+
+footer form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 5px 0;
+    color: var(--white);
+}
+
+footer form input::placeholder {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+footer form input:focus {
+    outline: none;
+}
+
+footer form button {
+    border: none;
+    background: transparent;
+    color: var(--white);
+}
+
+footer form button:hover {
+    opacity: 1;
+}
+
+footer form button:hover span i::before {
+    transition: 0.3s;
+}
+
+footer form button:hover span i::before {
+    margin-left: 5px;
+}
+
+footer .copy-rights {
+    margin-top: 70px;
+}
+
+footer .copy-rights a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--orange);
+}
+
+footer .copy-rights a:hover {
+    color: var(--white);
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    footer .head {
+        margin: 15px 0 10px 0;
+    }
+
+    footer .col-lg-3 {
+        margin-bottom: 15px;
+    }
+
+    footer .social {
+        margin-left: -6px;
+    }
+}
+
+/* end-footer */

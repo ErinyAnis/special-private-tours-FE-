@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="vendor/slick-carousel/css/slick.css">
+        <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
+        <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="vendor/magnific-popup/css/magnific-popup.css.css">
+        <link rel="stylesheet" href="css/tours-details.css">
+        <title>Tour-Details | special private tours</title>
+    </head>
+
+    <body class="overflow-x-hidden">
+        <div class="landing-page">
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg bg-transparent">
+                <div class="container">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    <!-- toggle btn -->
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- sidebar -->
+                    <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                        <!-- sidebar header -->
+                        <div class="offcanvas-header border-bottom">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <!-- sidebar body -->
+                        <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                            <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tours.html">Tours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="reviews.html">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+
+                            <!-- login / sign-up -->
+                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                                <div class="login-container">
+                                    <a href="login.html" class="login transition">Login</a>
+                                </div>
+                                <a href="sign-up.html" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container mt-5 pb-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 landing-title text-center text-lg-start">
+                        <div class="date white-background grey-color">24 - 28 DECEMBER 2023    .    4 DAYS 3 NIGHTS</div>
+                        <h2 class="main-title dark-color mt-3">Fairy-tale Castles Private Tour</h2>
+                        <div class="tour-price d-block d-md-flex align-items-center mb-3">
+                            <div class="price orange-color me-2"><span>$</span>800</div>
+                            <div class="notice grey-color">VAT not included</div>
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                            <a href="#booking" class="main-btn me-2">BOOK NOW</a>
+                            <div class="review-stars d-flex align-items-center">
+                                <div class="fw-bold me-2">4.0</div>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 tours-landing-slider transition tour-gellery">
+                        <a href="images/tours-landing-slider.png"><img src="images/tours-landing-slider.png" alt="image"></a>
+                        <a href="images/tours-landing-slider.png"><img src="images/tours-landing-slider.png" alt="image"></a>
+                        <a href="images/tours-landing-slider.png"><img src="images/tours-landing-slider.png" alt="image"></a>
+                        <a href="images/tours-landing-slider.png"><img src="images/tours-landing-slider.png" alt="image"></a>
+                        <a href="images/tours-landing-slider.png"><img src="images/tours-landing-slider.png" alt="image"></a>
+                    </div>
+                </div>
+                <div class="d-flex mt-5 landing-icons flex-column flex-lg-row">
+                    <div class="d-flex align-items-center grey-color icon-holder">
+                        <div class="icon"><img src="images/tour-landing-icon-1.png" alt="icon"></div>
+                        <div class="description">Tour Guide and Drivers all the way during the full trip.</div>
+                    </div>
+                    <div class="d-flex align-items-center grey-color icon-holder">
+                        <div class="icon"><img src="images/tour-landing-icon-2.png" alt="icon"></div>
+                        <div class="description">Complete accomodation for hotel and enterance to tourist attractions.</div>
+                    </div>
+                    <div class="d-flex align-items-center grey-color icon-holder">
+                        <div class="icon"><img src="images/tour-landing-icon-1.png" alt="icon"></div>
+                        <div class="description">Tour Guide and Drivers all the way during the full trip.</div>
+                    </div>
+                    <div class="d-flex align-items-center grey-color icon-holder">
+                        <div class="icon"><img src="images/tour-landing-icon-2.png" alt="icon"></div>
+                        <div class="description">Complete accomodation for hotel and enterance to tourist attractions.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- overview -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="overview mb-5">
+                    <h3 class="main-title mb-2">Overview</h3>
+                    <p>Borem ipsum dolor sit amet, consectetur adipiscing elit. Etiam e</p>
+                    <p>Borem ipsum dolor sit amet, Sed dignissim, metus nec fringilla accumsan, Aliquam in elementum tellus. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh. Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.
+                    </p>
+                    <p>Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex.</p>
+                </div>
+                <div class="destinations">
+                    <div class="head-title d-flex align-items-center">
+                        <h4 class="mb-3">Destinations</h4>
+                        <span class="ms-2">( 24 places )</span>
+                    </div>
+                    <!-- destination-slider -->
+                    <div class="destinations-slider">
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="destination-slider ps-2 pe-2">
+                            <a href="destination-details.html" class="dark-color">
+                                <div class="img-container">
+                                    <div class="image-holder hover">
+                                        <img src="images/tours-details-slider-1.png" alt="destination">
+                                    </div>
+                                </div>
+                                <div class="description d-flex align-items-center justify-content-between flex-wrap">
+                                    <h5 class="mt-3">Miniatur Wunderland</h5>
+                                    <div class="rating d-flex align-items-center">
+                                        <i class="fa-solid fa-star orange-color me-1"></i>
+                                        <span>4.3 (14)</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <section class="location section-padding">
+            <div class="container">  
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Where you can find <strong>Fairy-tale Castles Private Tour</strong>  on map</h4>
+                        <p class="grey-color mt-2 mb-4">Borem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus </p>
+                    </div>
+                </div>
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310844.0805017142!2d13.42473175!3d52.5068441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2seg!4v1692092980304!5m2!1sen!2seg" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- accordion -->
+        <section  class="accordion section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 side-border">
+                        <div class="accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        What’s included
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. If it’s canceled because the minimum isn’t met, you’ll be offered a different date/experience or a full refund
+                                        This tour/activity will have a maximum of 7 travelers class. This is the first item's accordion body.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Departure and return
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Additional information
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        FAQ
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. If it’s canceled because the minimum isn’t met, you’ll be offered a different date/experience or a full refund
+                                        This tour/activity will have a maximum of 7 travelers This is the first item's accordion body.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        What to expect
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. If it’s canceled because the minimum isn’t met, you’ll be offered a different date/experience or a full refund
+                                        This tour/activity will have a maximum of 7 travelers class. This is the first item's accordion body.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        Accessibility
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                        Cancellation policy
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                        Help
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Confirmation will be received at time of booking
+                                        Wear comfortable shoes such as sturdy or sports shoes with solid sole and comfy outfits
+                                        Travelers should have a moderate physical fitness level
+                                        This experience requires a minimum number of travelers. If it’s canceled because the minimum isn’t met, you’ll be offered a different date/experience or a full refund
+                                        This tour/activity will have a maximum of 7 travelers This is the first item's accordion body.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- tour-reviews-slider -->
+        <section class="tour-reviews section-padding">
+            <div class="container">
+                <div class="title-container d-flex align-items-center justify-content-between">
+                    <div class="ms-1">
+                        <div class="head-title">Check out</div>
+                        <h3 class="main-title mt-1 mb-3 title">Tour Reviews</h3>
+                    </div>
+                    <div>
+                        <a class="view-all transition" href="#">View All <span><i class="fa-solid fa-chevron-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="review-card-container">
+                    <div class="review-card">
+                        <div class="review-stars d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit fugiat nulla pariatur.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="images/tours-details-tour-review-user.png" alt="user">
+                            <div class="name ms-2 white-color">Tom Garphield</div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-stars d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit fugiat nulla pariatur.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="images/tours-details-tour-review-user.png" alt="user">
+                            <div class="name ms-2 white-color">Tom Garphield</div>
+                        </div>
+                    </div><div class="review-card">
+                        <div class="review-stars d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit fugiat nulla pariatur.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="images/tours-details-tour-review-user.png" alt="user">
+                            <div class="name ms-2 white-color">Tom Garphield</div>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-stars d-flex align-items-center mb-3">
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star active"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit fugiat nulla pariatur.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="images/tours-details-tour-review-user.png" alt="user">
+                            <div class="name ms-2 white-color">Tom Garphield</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="booking fixed-bottom">
+            <div class="container d-flex align-items-center flex-wrap justify-content-between">
+                <div class="date">
+                    <div><strong>24</strong> DEC - <strong>28</strong> DEC 2023</div>
+                    <div class="tour-price d-block d-md-flex align-items-center">
+                        <div class="price orange-color me-1">$800</div>
+                        <div class="notice grey-color">VAT not included</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="category">City</div>
+                    <div class="info">Frankfurt</div>
+                </div>
+                <div>
+                    <div class="category">Category</div>
+                    <div class="info">Exhibition</div>
+                </div>
+                <div>
+                    <div class="category">Family type</div>
+                    <div class="info">Kids friendly</div>
+                </div>
+                <div>
+                    <div class="category">Fees</div>
+                    <div class="info">Breakfast included</div>
+                </div>
+                <a href="#booking" class="main-btn">BOOK NOW</a>
+            </div>
+        </div>
+
+        <section id="booking" class="booking-container container white-background">
+            <div class="card">
+                <div id="msform">
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <div class="row mt-5">
+                            <div class="ps-4">
+                                <div class="d-block d-lg-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <h3>September 2023</h3>
+                                        <i class="fa-solid fa-angle-left arrow"></i>
+                                        <i class="fa-solid fa-angle-right ms-3 arrow"></i>
+                                    </div>
+                                    <hr class="d-block d-lg-none">
+                                    <div class="d-flex align-items-center request-date justify-content-between justify-content-lg-center">
+                                        <div>Can’t find the perfect day for you?</div>
+                                        <a href="#" class="ms-2 dark-color transition">Request a date</a>
+                                    </div>
+                                </div>
+                                <hr class="d-none d-lg-block">
+                                <div class="date-container row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex">
+                                            <div class="date my-auto">
+                                                <div>WED</div>
+                                                <div>21</div>
+                                            </div>
+                                            <div class="info text-start">
+                                                <h4>3-Day Private Tour Best of Bavaria and Tyrol</h4>
+                                                <div class="place mb-3">Minuch - Germany</div>
+                                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                    <div class="trip-date">23 SEP - 25 SEP</div>
+                                                    <div class="days orange-color">3 Days - 2 nights</div>
+                                                    <div class="price orange-color">$800</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 available-places-container my-auto">
+                                        <div class="d-block d-lg-flex align-items-center text-start ps-1 pe-1">
+                                            <div class="available-places"><span>5</span> Passengers Available</div>
+                                            <div class="d-flex align-items-center justify-content-center d-lg-block button-container text-start text-lg-end mt-3">
+                                                <a href="other-options.html" class="secondary-btn">Other options</a>
+                                                <a href="booking.html" class="book btn ms-3">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="date-container row">
+                                    <div class="col-lg-8 opacity">
+                                        <div class="d-flex">
+                                            <div class="date my-auto">
+                                                <div>WED</div>
+                                                <div>21</div>
+                                            </div>
+                                            <div class="info text-start">
+                                                <h4>3-Day Private Tour Best of Bavaria and Tyrol</h4>
+                                                <div class="place mb-3">Minuch - Germany</div>
+                                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                    <div class="trip-date">23 SEP - 25 SEP</div>
+                                                    <div class="days orange-color">3 Days - 2 nights</div>
+                                                    <div class="price orange-color">$800</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 available-places-container my-auto">
+                                        <div class="d-block d-lg-flex justify-content-between text-start ps-1 pe-1">
+                                            <div class="available-places my-auto">
+                                                <div class="fully-booked d-block">Fully Booked</div>
+                                                <p>Get reminded when a seat is available</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center d-lg-block button-container text-start text-lg-end mt-3">
+                                                <a href="other-options.html" class="secondary-btn">Other options</a>
+                                                <!-- Button to trigger modal -->
+                                                <button class="notify-me btn ms-2 transition" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Notify me</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content animate-top">
+                                            <div class="modal-header align-items-center">
+                                                <h5 class="modal-title">Wait for our message</h5>
+                                                <button type="button" class="close">
+                                                    <span aria-hidden="true">x</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="grey-color">Notify me is enabled for this tour, an email will be sent to you in case anyone cancelled a booking.</p>
+                                                <div class="card-holder">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <div class="title">
+                                                            <h3 class="dark-color">3-Day Private Tour Best of Bavaria and Tyrol</h3>
+                                                            <div>Minuch - Germany</div>
+                                                        </div>
+                                                        <div class="description">
+                                                            <div class="date">23 SEP - 25 SEP</div>
+                                                            <div class="period orange-color">3 Days - 2 nights</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="cancel btn close">Cancel request</button>
+                                                    <button type="button" class="keep-me btn">Keep me notified</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="date-container row">
+                                    <div class="col-lg-8">
+                                        <div class="d-flex">
+                                            <div class="date my-auto">
+                                                <div>WED</div>
+                                                <div>21</div>
+                                            </div>
+                                            <div class="info text-start">
+                                                <h4>3-Day Private Tour Best of Bavaria and Tyrol</h4>
+                                                <div class="place mb-3">Minuch - Germany</div>
+                                                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                                    <div class="trip-date">23 SEP - 25 SEP</div>
+                                                    <div class="days orange-color">3 Days - 2 nights</div>
+                                                    <div class="price orange-color">$800</div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 available-places-container my-auto">
+                                        <div class="d-block d-lg-flex align-items-center text-start ps-1 pe-1">
+                                            <div class="available-places"><span>5</span> Passengers Available</div>
+                                            <div class="d-flex align-items-center justify-content-center d-lg-block button-container text-start text-lg-end mt-3">
+                                                <a href="other-options.html" class="secondary-btn">Other options</a>
+                                                <a href="booking.html" class="book btn ms-3">Book</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+
+        <!-- semilar-tours-slider -->
+        <section class="semilar-tours section-padding">
+            <div class="container">
+                <div class="ms-3">
+                    <div class="head-title">Check out</div>
+                    <h3 class="main-title mt-1 mb-3 title">Similar Tours</h3>
+                </div>
+                <div class="tour-card-container">
+                    <div class="tour-card">
+                        <a href="#">
+                           <div class="img-container">
+                            <div class="image-holder hover">
+                                <img src="images/tours-details-similar-tours.png" alt="tour 1">
+                            </div>
+                           </div>
+                            <div class="d-flex justify-content-between sub-title mt-3">
+                                <h3>Fairy-tale Castles Private Tour</h3>
+                                <div class="rating dark-color mt-1"><span><i class="fa-solid fa-star me-1"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="grey-color sub-title">Füssen - Germany</div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="tour-card">
+                        <a href="#">
+                           <div class="img-container">
+                            <div class="image-holder hover">
+                                <img src="images/tours-details-similar-tours.png" alt="tour 1">
+                            </div>
+                           </div>
+                            <div class="d-flex justify-content-between sub-title mt-3">
+                                <h3>Fairy-tale Castles Private Tour</h3>
+                                <div class="rating dark-color mt-1"><span><i class="fa-solid fa-star me-1"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="grey-color sub-title">Füssen - Germany</div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="tour-card">
+                        <a href="#">
+                           <div class="img-container">
+                            <div class="image-holder hover">
+                                <img src="images/tours-details-similar-tours.png" alt="tour 1">
+                            </div>
+                           </div>
+                            <div class="d-flex justify-content-between sub-title mt-3">
+                                <h3>Fairy-tale Castles Private Tour</h3>
+                                <div class="rating dark-color mt-1"><span><i class="fa-solid fa-star me-1"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="grey-color sub-title">Füssen - Germany</div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="tour-card">
+                        <a href="#">
+                           <div class="img-container">
+                            <div class="image-holder hover">
+                                <img src="images/tours-details-similar-tours.png" alt="tour 1">
+                            </div>
+                           </div>
+                            <div class="d-flex justify-content-between sub-title mt-3">
+                                <h3>Fairy-tale Castles Private Tour</h3>
+                                <div class="rating dark-color mt-1"><span><i class="fa-solid fa-star me-1"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="grey-color sub-title">Füssen - Germany</div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                    <div class="tour-card">
+                        <a href="#">
+                           <div class="img-container">
+                            <div class="image-holder hover">
+                                <img src="images/tours-details-similar-tours.png" alt="tour 1">
+                            </div>
+                           </div>
+                            <div class="d-flex justify-content-between sub-title mt-3">
+                                <h3>Fairy-tale Castles Private Tour</h3>
+                                <div class="rating dark-color mt-1"><span><i class="fa-solid fa-star me-1"></i></span>4.3 (14)</div>
+                            </div>
+                            <div class="grey-color sub-title">Füssen - Germany</div>
+                            <span class="price">$600</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="section-padding main-color white-color">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                        <div class="social d-flex">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="head">About Us</div>
+                        <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                            come as a tourist and leave as a friend </p>
+
+                        <div>Amir Saad</div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="head">Pages</div>
+                        <ul class="links d-flex flex-wrap">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="head">Stay up to date on the latest from us :</div>
+                        <form action="">
+                            <input type="text" placeholder="Enter your email address">
+                            <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="vendor/jquery/jquery.js"></script>
+        <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+        <script src="vendor/slick-carousel/js/slick.min.js"></script>
+        <script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup.js"></script>
+        <script src="js/slick-carousel.js"></script>
+        <script src="js/booking.js"></script>
+        <script src="js/modal-popup.js"></script>
+        <script src="js/custom-select.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(window).on('scroll', function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 50) {
+                        $("nav").addClass("fixed-top");
+                        $("nav").addClass("white-background");
+                    } else {
+                        $("nav").removeClass("fixed-top");
+                        $("nav").removeClass("white-background");
+                    }
+                });
+                
+                
+                $('.remove').click(function(){
+                    $(this).parent().next('form').hide();
+                });
+                
+                $('.add-passenger').click(function(){
+                    $('.new-passenger').clone().insertAfter("div.new-passenger:last");
+                });
+                
+            });
+        </script>
+
+
+
+    </body>
+</html>

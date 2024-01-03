@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/rslider/css/rSlider.min.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <title>Booking | special private tours</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="landing-page">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top white-background">
+            <div class="container">
+                <!-- logo -->
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+            <!-- toggle btn -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+            <!-- sidebar header -->
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.svg" alt="logo"></h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!-- sidebar body -->
+                <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+
+                <!-- login / sign-up -->
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                    <div class="login-container">
+                        <a href="login.html" class="login transition">Login</a>
+                    </div>
+                    <a href="sign-up.html" class="px-3 py-1 rounded-2 sign-up-border transition sign-up">Sign Up</a>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+        <div id="booking" class="booking-container container white-background">
+            <div class="card">
+                <div id="msform">
+                    <div class="d-block d-lg-flex align-items-center text-start">
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"></li>
+                            <li id="personal"></li>
+                            <li id="payment"></li>
+                            <li id="confirm"></li>
+                        </ul>
+                    </div>
+    
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <div class="row mt-5">  
+                            <div class="side-bar col-lg-2 d-none d-xl-block">
+                                <button class="active">Additional info</button>
+                                <button>Payment</button>
+                                <button>Checkout</button>
+                            </div>  
+                            <div class="col-lg-8 col-xl-6 ps-4">
+                                <div class="d-block d-lg-flex align-items-center justify-content-between">
+                                    <h3>Additinal information</h3>   
+                                    <hr class="d-block d-lg-none">
+    
+                                </div>
+                                <hr class="d-none d-lg-block">
+                                <div class="text-start add-info">
+                                    <h4>Add your info</h4>
+                                    <p class="grey-color">Type the passenger info to ensure booking details</p>
+                                    <form class="additional-info-form" id="booking-form" action="" method="post">
+                                        <div class="d-block d-lg-flex">
+                                            <input class="me-lg-2" type="text" name="first_name" placeholder="First Name">
+                                            <input type="text" name="last_name" placeholder="Last Name">
+                                        </div>
+                                        <div class="d-block d-lg-flex">
+                                            <input class="me-lg-2" type="email" name="email" placeholder="Email">
+                                            <input type="number" name="phone" placeholder="Phone">
+                                        </div>
+                                        <div class="d-block d-lg-flex">
+                                            <div class="gender form-floating custom-select me-lg-2">
+                                                <select id="gender" name="gender" class="form-select shadow-none">
+                                                    <option value="" selected>Gender</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </div>
+                                            <div class="age form-floating custom-select">
+                                                <select id="age" name="age" class="form-select shadow-none">
+                                                    <option value="" selected>Age</option>
+                                                    <option value="1-6">1-6<span class="discount"> 40% discount</span></option>
+                                                    <option value="7-12">7-12</option>
+                                                    <option value="13-21">13-21<span class="discount"> 20% discount</span></option>
+                                                    <option value="22-40">13-21</option>
+                                                    <option value="41-above">41-above<span class="discount"> 15% discount</span></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <div class="new-passenger">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h4>Add passenger info</h4>
+                                                <p class="grey-color">Type the passenger info to ensure booking details</p>
+                                            </div>
+                                            <button class="remove btn"><i class="fa-solid fa-minus me-2"></i>Remove</button>
+                                        </div>
+                                        <form class="additional-info-form" action="" method="post">
+                                            <div class="d-block d-lg-flex">
+                                                <input class="me-lg-2" type="text" name="f-name" placeholder="First Name">
+                                                <input type="text" name="l-name" placeholder="Last Name">
+                                            </div>
+                                            <div class="d-block d-lg-flex">
+                                                <input class="me-lg-2" type="email" name="e-mail" placeholder="Email">
+                                                <input type="number" name="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="d-block d-lg-flex">
+                                                <div class="gender form-floating custom-select me-lg-2">
+                                                    <select id="gender" name="gender" class="form-select shadow-none">
+                                                        <option value="" selected>Gender</option>
+                                                        <option value="male">Male</option>
+                                                        <option value="female">Female</option>
+                                                    </select>
+                                                </div>
+                                                <div class="age form-floating custom-select">
+                                                    <select id="gender" name="gender" class="form-select shadow-none">
+                                                        <option value="" selected>Age</option>
+                                                        <option value="1-6">1-6<span class="discount"> 40% discount</span></option>
+                                                        <option value="7-12">7-12</option>
+                                                        <option value="13-21">13-21<span class="discount"> 20% discount</span></option>
+                                                        <option value="22-40">13-21</option>
+                                                        <option value="41-above">41-above<span class="discount"> 15% discount</span></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <hr>
+                                    </div>
+                                    
+                                    <button class="add-passenger btn"><i class="fa-solid fa-plus me-2"></i>Add Passenger</button>
+                                    <h4>Additional Notes (optional)</h4>
+                                    <hr>
+                                    <p>Any suggestions or information you need to share with us</p>
+                                    <textarea name="" id="" cols="30" rows="6"></textarea>
+                                </div>
+    
+                            </div>
+    
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="request-date d-flex align-items-center">
+                                    <span class="me-1">Summary</span>
+                                    <div class="grey-color">increases when adding passengers</div>
+                                </div>
+                                <hr>
+                                <div class="summary-container grey-color">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Passengers</div>
+                                        <div class="number">3</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">For each</div>
+                                        <div class="number">$800</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between orange-color mb-3">
+                                        <div class="name">Child discount</div>
+                                        <div class="number">40%</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Discount count</div>
+                                        <div class="number">1</div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Total</div>
+                                        <div class="number total">$2,400</div>
+                                    </div>
+                                    <button>Continue to payment<i class="fa-solid fa-angle-right ms-2"></i></button>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="row mt-5">    
+                            <div class="side-bar col-lg-2 d-none d-xl-block">
+                                <button>Additional info</button>
+                                <button class="active">Payment</button>
+                                <button>Checkout</button>
+                            </div>
+    
+                            <div class="col-lg-8 col-xl-6 ps-4 payment">
+                                <div class="d-block d-lg-flex align-items-center justify-content-between">
+                                    <h3>Payment Method</h3>   
+                                    <hr class="d-block d-lg-none">
+                                </div>
+                                <hr class="d-none d-lg-block">
+                                <div class="add-info">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <img src="images/paypal.png" alt="paypal">
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            <img class="mt-2" src="images/amazon-pay.png" alt="amazon-pay">
+                                        </label>
+                                    </div>
+                                    <hr>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault3">
+                                            Credit Card
+                                            <div>
+                                                <img src="images/credit-card-1.png" alt="visa">
+                                                <img src="images/credit-card-2.png" alt="visa">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <form action="" method="post">
+                                        <input class="mt-2" type="password" placeholder="Card Number **** **** **** ****">
+                                        <div class="d-flex">
+                                            <input class="mt-2" type="text" placeholder="Card Holder Name">
+                                            <input class="mt-2 ms-2" type="number" placeholder="Exp.Date  00/00">
+                                            <input class="mt-2 ms-2" type="number" placeholder="CVC ****">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="request-date d-flex align-items-center">
+                                    <span class="me-1">Summary</span>
+                                    <div class="grey-color">increases when adding passengers</div>
+                                </div>
+                                <hr>
+                                <div class="summary-container grey-color">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Passengers</div>
+                                        <div class="number">3</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">For each</div>
+                                        <div class="number">$800</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between orange-color mb-3">
+                                        <div class="name">Child discount</div>
+                                        <div class="number">40%</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Discount count</div>
+                                        <div class="number">1</div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Total</div>
+                                        <div class="number total">$2,400</div>
+                                    </div>
+                                    <button>Continue to checkout<i class="fa-solid fa-angle-right ms-2"></i></button>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="row mt-5">    
+                            <div class="side-bar col-lg-2 d-none d-xl-block">
+                                <button>Additional info</button>
+                                <button>Payment</button>
+                                <button class="active">Checkout</button>
+                            </div>
+    
+                            <div class="col-lg-8 col-xl-6 ps-4 payment">
+                                <div class="d-block d-lg-flex align-items-center justify-content-between">
+                                    <h3>Checkout</h3>   
+                                    <hr class="d-block d-lg-none">
+                                </div>
+                                <hr class="d-none d-lg-block">
+                                <div class="checkout add-info text-start">
+                                    <h4>Additional info <span class="grey-color">( 3 )</span></h4>
+                                    <div class="info-card-container d-block d-lg-flex">
+                                        <div class="info-card d-flex ">
+                                            <div class="name">
+                                                <div>Eriny Anis</div>
+                                                <div class="text-truncate" style="max-width: 130px;">erinyanis455@gmail.com</div>
+                                            </div>
+                                            <div class="data ms-auto">
+                                                <div>24 years old</div>
+                                                <div>012 345 625 76</div>
+                                            </div>
+                                        </div>       
+                                        <div class="info-card d-flex ">
+                                            <div class="name">
+                                                <div>Marina Adly</div>
+                                                <div class="text-truncate" style="max-width: 130px;">marinaadly455@gmail.com</div>
+                                            </div>
+                                            <div class="data ms-auto">
+                                                <div>24 years old</div>
+                                                <div>012 345 625 76</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-card-container d-flex ">
+                                        <div class="info-card discount-card d-flex">
+                                            <div class="name">
+                                                <div>Mokka Adel</div>
+                                                <div class="text-truncate" style="max-width: 130px;">mark.mkamk455@gmail.com</div>
+                                            </div>
+                                            <div class="data ms-auto">
+                                                <div>12 years old</div>
+                                                <div>012 345 625 76</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <h4>Payment method</h4>
+                                    <div class="d-flex align-items-center justify-content-between grey-color">
+                                        <div>Credit card</div>
+                                        <div>**** **** **** **43</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between grey-color mt-2">
+                                        <img src="images/credit-card-1.png" alt="visa">
+                                        <div>Eriny Anis</div>
+                                    </div>
+                                    <hr>
+                                    <h4>Additional notes</h4>
+                                    <p class="grey-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <hr>
+                                    <h4>Trip you’re heading to</h4>
+                                    <p class="grey-color">Lorem ipsum dolor sit amet, consectetur</p>
+    
+                                    <div class="card-holder mt-3">
+                                        <div class="d-flex">
+                                            <div class="img-container">
+                                                <img src="images/other-options-img.png" alt="tour-img">
+                                            </div>
+                                            <div class="title">
+                                                <h3>3-Day Private Tour Best of Bavaria and Tyrol</h3>
+                                                <div>Minuch - Germany</div>
+                                            </div>
+                                            <div class="ms-auto">
+                                                <a href="tours-details.html" class="d-none d-md-block">Tour Details</a>
+                                            </div>
+                                        </div>
+                                        <div class="info d-flex align-items-center justify-content-between flex-wrap">
+                                            <div class="date">12/10/2023</div>
+                                            <div class="period">3 Days - 2 nights</div>
+    
+                                            <div class="price orange-color">$800</div>
+                                            <a href="tours-details.html" class="d-block d-md-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-4">
+                                <div class="request-date d-flex align-items-center">
+                                    <span class="me-1">Summary</span>
+                                    <div class="grey-color">increases when adding passengers</div>
+                                </div>
+                                <hr>
+                                <div class="summary-container grey-color">
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Passengers</div>
+                                        <div class="number">3</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">For each</div>
+                                        <div class="number">$800</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between orange-color mb-3">
+                                        <div class="name">Child discount</div>
+                                        <div class="number">40%</div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Discount count</div>
+                                        <div class="number">1</div>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flex align-items-center justify-content-between mb-3">
+                                        <div class="name">Total</div>
+                                        <div class="number total">$2,400</div>
+                                    </div>
+                                    <button>Confirm trip<i class="fa-solid fa-angle-right ms-2"></i></button>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="success text-center">
+                                <div class="celebrate d-flex justify-content-center mt-3">
+                                    <img class="frame" src="images/Frame.png" alt="">
+                                    <div class="bottle">
+                                        <img src="images/success.gif" alt="success">
+                                    </div>
+                                    <img class="frame" src="images/Frame.png" alt="">
+                                </div>
+                                <div class="succes-content mt-3">
+                                    <div class="mb-1">Congratulations!</div>
+                                    <h3 class="text-center">You have successfully booked your place in our trip!</h3>
+                                    <p class="grey-color">just wait for our email to receive more info about the trip movements and timetable.. don’t miss it! </p>
+                                    <a href="index.html">Back to homepage</a>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+       
+    </section>  
+
+    
+
+    <footer class="section-padding main-color white-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="fs-6 mb-2 ps-lg-2">Special Private Tours</div>
+                    <div class="social d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">About Us</div>
+                    <p>Special Private Tours, gives you the flexibility to have your own itinerary with a local professional tour guide full of passion and knowledge and experience for the country you will be visiting!
+                        come as a tourist and leave as a friend </p>
+                        
+                    <div>Amir Saad</div>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Pages</div>
+                    <ul class="links d-flex flex-wrap">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3">
+                    <div class="head">Stay up to date on the latest from us :</div>
+                    <form action="">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="d-block mt-3" type="submit">Subscribe <span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copy-rights">
+                <hr>
+                <div>&#169; Copyright 2023 Designed and developed by <a href="www.innovationscope.com">Innovation Scope</a> Egypt. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="vendor/slick-carousel/js/slick.min.js"></script>
+    <script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/slick-carousel.js"></script>
+    <script src="js/modal-popup.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+    <script src="js/form-validate.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    $("nav").addClass("shadow");
+                } else {
+                    $("nav").removeClass("shadow");
+                }
+            });
+
+            $(".menu-btn").click(function(){
+                $(".side-bar").addClass('active');
+                $(".menu-btn").css("visibility", "hidden");
+            });
+            
+            $(".close-btn").click(function(){
+                $(".side-bar").removeClass('active');
+                $(".menu-btn").css("visibility", "visible");
+            });
+
+                $('body').on('click', '.remove', function () {
+                    // $(this).parent().next('form').hide();
+                    $(this).parent().parent().remove();
+                });
+                
+                $('.add-passenger').click(function(){
+                    $('div.new-passenger:last').clone().insertAfter("div.new-passenger:last");
+                });
+        });
+    </script>
+</body>
+</html>
